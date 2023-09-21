@@ -1,12 +1,13 @@
-#include <iostream>
-#include <ctime>
+#include<iostream>
+#include<ctime>
 
-namespace std
-
-	int main() {
-
+using namespace std;
+int main() {
 
 
+	cout << "Hello world" << endl;
 
 
+
+	return 0;
 }
