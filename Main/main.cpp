@@ -9,7 +9,9 @@ int main(void){
     setlocale(LC_ALL, "ukr");
 
     int year1,year2,year3;
-    string direc1,direc2,direc3;
+    char direc1[20];
+    char direc2[20];
+    char direc3[20];
     int diametr1,diametr2,diametr3;
     int freq1, freq2,freq3;
 
