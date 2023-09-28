@@ -1,5 +1,4 @@
 #include <iostream>
-#include <stdio.h>
 #include <string>
 #include <iomanip>
 
@@ -33,18 +32,18 @@ int main(void){
     cin>>diametr3;
     cin>>freq3;
 
-          cout<<(" --------------------------------------------------\n");
+    cout<<(" --------------------------------------------------\n");
     cout<<("|       Проекти пошуку позаземних сигналів        |\n");
     cout<<("|-------------------------------------------------|\n");
     cout<<("|  Рік   | Науковий  | Діаметр    | Робоча частота|\n");
     cout<<("|        | керівник  | антени (м) |    (ГГц)      |\n");
     cout<<("|--------|-----------|------------|---------------|\n");
 
-    cout << ("|")<< setw(5)<< year1<< setw(4)<<("|") << setw(12)<< direc1 <<setw(5)<<("|")<<setw(5)<< diametr1 << setw(8)<<("|")<< setw(6)<<freq1<< setw(10)<<("|")<< endl;
+    cout << ("|")<< setw(8)<< year1<<("|") << setw(11)<< direc1 <<("|")<<setw(12)<< diametr1 <<("|")<< setw(15)<<freq1<< ("|")<< endl;
 
-    cout << ("|")<< setw(5)<< year2<< setw(4)<<("|") << setw(12)<< direc2 <<setw(3)<<("|")<<setw(5)<< diametr2 << setw(8)<<("|")<< setw(6)<<freq2<< setw(10)<<("|")<< endl;
+    cout << ("|")<< setw(8)<< year2<<("|") << setw(11)<< direc2 <<("|")<<setw(12)<< diametr2 << ("|")<< setw(15)<<freq2<< ("|")<< endl;
 
-    cout << ("|")<< setw(5)<< year3<< setw(4)<<("|") << setw(12)<< direc3 <<setw(5)<<("|")<<setw(5)<< diametr3 << setw(8)<<("|")<< setw(6)<<freq3<< setw(10)<<("|")<< endl;
+    cout << ("|")<< setw(8)<< year3<<("|") << setw(11)<< direc3 <<("|")<<setw(12)<< diametr3 << ("|")<< setw(15)<<freq3<< ("|")<< endl;
 
     cout<<("|-------------------------------------------------|\n");
     cout<<("|         Примітка: спостерігалися об'єкти        |\n");
