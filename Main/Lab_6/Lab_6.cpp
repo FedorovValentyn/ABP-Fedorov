@@ -1,10 +1,12 @@
 #include <iostream>
 #include <iomanip>
+#include <ctime>
 
 using namespace std;
 
 
 int Lab_6() {
+    srand(time(NULL));
     const int SIZE = 100;
     int signIndex[100];
     int arr[SIZE];
@@ -18,6 +20,7 @@ int Lab_6() {
             cout << endl;
         }
     }
+    cout<< endl;
 
     for (int i = 1; i < SIZE; ++i) {
         if (arr[i - 1] * arr[i] < 0) {

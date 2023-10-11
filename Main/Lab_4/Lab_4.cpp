@@ -23,8 +23,8 @@ int Lab_4(){
         }
     }
 
-    cout << endl;
-
+    cout <<" " <<endl;
+    cout <<""<<endl;
     int lastPositiveIndex = SIZE-1;
 
     for (int i = 0; i <= lastPositiveIndex; i++) {
@@ -49,8 +49,9 @@ int Lab_4(){
     for (int i = 0; i < SIZE; i++) {
         cout << arr[i] << ' ';
         if (i % 25 == 0 && i != 0) {
-            cout << endl;
+            cout<<"  " << endl;
         }
     }
+    cout<<"  "<<endl;
     return 0;
 }
