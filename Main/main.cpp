@@ -7,6 +7,7 @@
 #include "Lab_3//Lab_3.cpp"
 #include "Lab_4//Lab_4.cpp"
 #include "Lab_5//Lab_5.cpp"
+#include "Lab_6//Lab_6.cpp"
 using namespace std;
 
 
@@ -33,9 +34,12 @@ anchor:
             Lab_5();
             break;
         case 6:
+            Lab_6();
+            break;
+        case 7:
             cout<< "Введіть номер лаби:"<<endl;
             break;
-        case 7 :
+        case 8 :
             return 0;
         default :
             cout<< "Неправильне значення"<< endl;
