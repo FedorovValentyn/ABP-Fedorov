@@ -15,7 +15,7 @@ int Lab_7() {
 
     for(int i = 0; i < n; i++) {
         for (int j = 0; j < n; j++) {
-            array[i][j] = rand() % 20;
+            array[i][j] = rand() % 101-50;
             cout << array[i][j] << " ";
         }
         cout << endl;
