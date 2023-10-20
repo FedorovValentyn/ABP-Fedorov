@@ -1,42 +1,71 @@
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
-#include <cstdlib>
+
 using namespace std;
 
-int Lab_7() {
 
-    int n;
-    cout<<"Введіть розмірність масиву : " <<endl;
-    cin>> n;
-    int array[n][n];
-    int rowLength = n - 1;
-
-
-    for(int i = 0; i < n; i++) {
+void fillArray(int** array, int n) {
+    for (int i = 0; i < n; i++) {
         for (int j = 0; j < n; j++) {
-            array[i][j] = rand() % 101-50;
-            cout << array[i][j] << " ";
+            array[i][j] = rand() % 101 - 50;
         }
-        cout << endl;
     }
+}
 
+
+
+
+
+void swapSecondaryDiagonal(int** array, int n) {
+    int rowLength = n - 1;
     for (int i = 0; i < n - 1; i++) {
         for (int j = 0; j < rowLength; j++) {
-            cout << endl;
             cout << "ij " << array[i][j] << " ji " << array[n-1-j][n-1-i] << endl;
             array[n-1-j][n-1-i] = array[i][j];
         }
         rowLength--;
     }
+}
 
-    cout << "Матриця з верхнім та нижнім трикутником побічної діагоналі:" << endl;
+
+void displayArray(int** array, int n) {
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < n; j++) {
             cout << array[i][j] << " ";
         }
         cout << endl;
     }
-return 0;
 }
 
+int Lab_7() {
+    int n;
+    cout << "Введіть розміреність матриці : " << endl;
+    cin >> n;
+
+    int** array = new int*[n];
+    for (int i = 0; i < n; i++) {
+        array[i] = new int[n];
+    }
+
+
+    srand(time(nullptr));
+
+    fillArray(array, n);
+
+    cout << "Оригінальна матриця:" << endl;
+    displayArray(array, n);
+
+    swapSecondaryDiagonal(array, n);
+
+    cout << "Матриця з відображенням по діагоналі:" << endl;
+    displayArray(array, n);
+
+
+    for (int i = 0; i < n; i++) {
+        delete[] array[i];
+    }
+    delete[] array;
+
+    return 0;
+}
