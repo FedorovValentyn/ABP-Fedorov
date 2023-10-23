@@ -13,6 +13,7 @@
 #include "Lab_9//Lab_9.cpp"
 #include "Lab_10//Lab_10.cpp"
 #include "Lab_11//Lab_11.cpp"
+#include "Lab_12//Lab_12.cpp"
 using namespace std;
 
 
@@ -56,6 +57,9 @@ anchor:
             break;
         case 11:
             Lab_11();
+            break;
+        case 12:
+            Lab_12();
             break;
         case 15:
             cout<< "Введіть номер лаби:"<<endl;

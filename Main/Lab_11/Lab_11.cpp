@@ -21,7 +21,7 @@ public:
     RLY(const string& a_val, const string& b_val, const string& c_val, const string& d_val)
             : a(a_val), b(b_val), c(c_val), d(d_val) {}
 
-    // Функції-аксесори (get та set) для кожного поля:
+    // Функції-аксесори  для кожного поля:
 
     string getA() const { return a; }
     void setA(const string& value) { a = value; }
@@ -63,7 +63,7 @@ int Lab_11() {
 
     RLY arr[4];
 
-    // Виведення розділювача
+
     string separator(64, '-');
     cout << separator << endl;
 
@@ -76,7 +76,7 @@ int Lab_11() {
 
     string separator2(64, '-');
 
-    // Виведення заголовка таблиці перед першим рядком даних
+
     cout << "| " << left << setw(10) << "Рік"
          << "| " << left << setw(6) << "Науковий керівник"
          << "| " << left << setw(17) << "Діаметр антени (м)"
@@ -86,7 +86,7 @@ int Lab_11() {
     for (int i = 1; i < 4; ++i) {
         arr[i].show();
 
-        if (i == 1) cout << separator2 << endl;
+        if (i == 3) cout << separator2 << endl;
     }
 
     cout << "Примітка: спостерігалися об'єкти від 2 зірок до кількох галактик" << endl;
