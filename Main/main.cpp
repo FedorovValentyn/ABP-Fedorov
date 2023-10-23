@@ -12,10 +12,12 @@
 #include "Lab_8//Lab_8.cpp"
 #include "Lab_9//Lab_9.cpp"
 #include "Lab_10//Lab_10.cpp"
+#include "Lab_11//Lab_11.cpp"
 using namespace std;
 
 
 int main(){
+
     SetConsoleOutputCP(CP_UTF8);
 int nomerLabaratornoi;
 anchor:
@@ -51,6 +53,9 @@ anchor:
             break;
         case 10:
             Lab_10();
+            break;
+        case 11:
+            Lab_11();
             break;
         case 15:
             cout<< "Введіть номер лаби:"<<endl;
