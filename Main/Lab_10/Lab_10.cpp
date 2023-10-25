@@ -53,7 +53,7 @@ int Lab_10() {
 
     cout << separator << endl;
 
-    ifstream readFile("mainLab_10.cpp");
+    fstream readFile("mainLab_10.cpp");
     if (!readFile.is_open()) {
         cerr << "Не вдалося відкрити файл для читання." << endl;
         return 1;
