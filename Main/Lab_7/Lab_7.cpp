@@ -15,8 +15,6 @@ void fillArray(int** array, int n) {
 
 
 
-
-
 void swapSecondaryDiagonal(int** array, int n) {
     int rowLength = n - 1;
     for (int i = 0; i < n - 1; i++) {
