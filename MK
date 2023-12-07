@@ -1,0 +1,35 @@
+#include <vector>
+#include <string>
+#include <cmath>
+using namespace std;
+
+int sum(vector<int> nums) {
+    int count = 0;
+    for(int& i : nums)
+        count += i;
+    return count;
+}
+
+string somefunc(unsigned long n) {
+    unsigned long lPfactor;
+    while (n % 2 == 0) {
+        n /= 2;
+        lPfactor = 2;
+    }
+    for (unsigned long i = 3; i <= sqrt(n); i += 2)
+        while (n % i == 0) {
+            n /= i;
+            lPfactor = i;
+        }
+    if (n != 1)
+        lPfactor = n;
+    return  lPfactor == 2 ?
+            "power of 2" :
+            lPfactor == 3 ?
+            "3-smooth" :
+            lPfactor == 5 ?
+            "Hamming number" :
+            lPfactor == 7 ?
+            "humble number" :
+            "non-smooth";
+}
